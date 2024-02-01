@@ -16,7 +16,7 @@ node('slave1') {
                         sh "git config user.name uguroral"
                         //sh "git switch master"
                         sh "cat deployment.yaml"
-                        sh "sed -i 's+uguroral/kubtest.*+uguroral/test:${DOCKERTAG}+g' deployment.yaml"
+                        sh "sed -i 's+uguroral/kubtest2.*+uguroral/test2:${DOCKERTAG}+g' deployment.yaml"
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
