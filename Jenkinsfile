@@ -25,7 +25,7 @@ node('slave1') {
     }
   }
 }
-    stage('Trigger ManifestUpdate') {
+    stage('Trigger deploydeneme') {
                 echo "triggering deploydeneme"
                 build job: 'deploydeneme'
         }
